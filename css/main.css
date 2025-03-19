@@ -68,6 +68,20 @@ div > div:nth-of-type(2) {
 
 /* css custom properties -> "css kintamieji" */
 
+@font-face {
+  font-family: Roboto;
+  src: url(../font/static/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto2;
+  src: url(../font/static/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -110,7 +124,8 @@ div > div:nth-of-type(2) {
   nav > a:hover {
     text-decoration: underline;
     color: #000;
-  }
+    text-shadow: 0.5px 0.5px #331627;
+      }
   
   main > div {
     float: left;
@@ -122,11 +137,15 @@ div > div:nth-of-type(2) {
     font-size: 60px;
     margin: 0;
     font-weight: lighter;
+    font-family: Roboto2;
+
   }
   div > p:nth-of-type(2) {
     font-size: 50px;
     margin: 0;
     font-weight: bold;
+    font-family: Roboto2;
+
   }
   div > p:nth-of-type(3) {
     color: #555;
@@ -195,7 +214,13 @@ div > div:nth-of-type(2) {
     color: #333;
     text-decoration: none;
   }
-  
+  footer > div > a:hover {
+    text-decoration: underline;
+    color: #000;
+    text-shadow: 1px 1px #3a2433;
+    
+  }
+
   footer > p {
     float: right;
     margin: 0;
