@@ -1,73 +1,3 @@
-/*
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 100px;
-    width: 100%;
-    background-image: url("../img/pexels-felixmittermeier-1146134.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-main {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 25px;
-}
-header {
-background-color: yellow;
-}
-
-header > img {
-
-}
-
-img {
-
-}
-
-nav {
-
-}
-
-nav > a {
-
-}
-
-main {
-
-}
-
-main > div {
-
-}
-
-div > p:nth-of-type(1) {
-    background-color: yellow;
-}
-
-div > p:nth-of-type(2) {
-    background-color: green;
-}
-
-div > p:nth-of-type(3) {
-    background-color: red;
-}
-
-div > div:nth-of-type(1) {
-    background-color: blue;
-}
-
-div > div:nth-of-type(2) {
-    background-color: violet;
-}
-*/
-
-/* css custom properties -> "css kintamieji" */
-
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto/static/Roboto-Thin.ttf);
@@ -75,35 +5,40 @@ div > div:nth-of-type(2) {
   font-style: normal;
 }
 @font-face {
-  font-family: Roboto;
+  font-family: Roboto1;
   src: url(../fonts/Roboto/static/Roboto-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: Roboto;
+  font-family: Roboto2;
   src: url(../fonts/Roboto/static/Roboto-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: Roboto3;
   src: url(../fonts/Roboto/static/Roboto-ThinItalic.ttf);
   font-weight: 100;
   font-style: italic;
 }
 @font-face {
-  font-family: Roboto;
+  font-family: Roboto4;
   src: url(../fonts/Roboto/static/Roboto-Italic.ttf);
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
-  font-family: Roboto;
+  font-family: Roboto5;
   src: url(../fonts/Roboto/static/Roboto-BoldItalic.ttf);
   font-weight: 700;
   font-style: italic;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url();
 }
 
 * {
@@ -141,6 +76,11 @@ div > div:nth-of-type(2) {
     margin-left: 30px;
     user-select: none;
   }
+
+  .active:hover{
+    background-color: #f7e7ff;
+    border-radius: 20px;
+  }
   .nav-link:first-child {
     margin-left: 0;
   }
@@ -160,16 +100,18 @@ div > div:nth-of-type(2) {
     font-size: 60px;
     margin: 0;
     font-weight: lighter;
-    font-family: Roboto2;
+    font-family:'roboto2';
     user-select: none;
+      }
 
-  }
+  
   .sub-title {
     font-size: 50px;
     margin: 0;
     font-weight: bold;
     font-family: Roboto2;
     user-select: none;
+    
 
   }
   .line {
@@ -198,7 +140,7 @@ div > div:nth-of-type(2) {
     text-decoration: none;
     user-select: none;
   }
-  .btn.btn-white  {
+  .btn-btn-white  {
     float: left;
     font-size: 16px;
     line-height: 20px;
@@ -213,9 +155,14 @@ div > div:nth-of-type(2) {
     user-select: none;
   }
   
-  .btn:hover {
+  .btn:hover  {
     box-shadow: 0px 6px 12px #0007;
-    color: rgba(248, 203, 228, 50);
+    color: rgb(207, 31, 90);
+    border-radius: 20px;
+  }
+  .btn-btn-white:hover  {
+    box-shadow: 0px 6px 12px #0007;
+    color: rgb(161, 221, 20);
     border-radius: 20px;
   }
   
@@ -244,8 +191,30 @@ div > div:nth-of-type(2) {
     
   }
 
+  .social-group{
+    user-select: none;
+
+  }
+.ig{
+  width: 30px;
+}
+.fb{
+  width: 30px;
+}
+.google{
+  width: 60px;
+}
+.in{
+  width: 30px;
+  margin-left: 5px;
+}
+.ig:hover, .fb:hover, .google:hover, .in:hover{
+  width: 35px;
+  
+}
   .copyright {
     float: right;
     margin: 0;
     user-select: none;
   }
+
